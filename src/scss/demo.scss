@@ -1,0 +1,48 @@
+.cb-demo {
+    $root:&;
+
+    position:relative;
+    z-index:3;
+    overflow:hidden;
+
+    &.-v1, &.-v3 {
+        color:$color-base;
+        background:$color-graybase;
+    }
+
+    &-particles {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:10;
+    }
+
+    &-content {
+        display:flex;
+        align-items:center;
+        text-align:center;
+        height:100vh;
+    }
+
+    &-container {
+        width:100%;
+    }
+
+    &-header {
+        position:relative;
+        z-index:11;
+
+        h1, h2 {
+            position:relative;
+
+            font-size:6vw;
+            font-weight:900;
+            line-height:1;
+            letter-spacing:-0.02em;
+            text-align:center;
+            text-transform:uppercase;
+        }
+    }
+}

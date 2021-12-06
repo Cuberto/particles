@@ -1,0 +1,143 @@
+/**
+    Example of particles
+ */
+.cb-particles {
+    $root:&;
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow:hidden;
+
+    contain:content;
+    pointer-events:none;
+
+    &-item {
+        $this:&;
+
+        position:absolute;
+        pointer-events:auto;
+
+        /* Types */
+        &.-dot {
+            &:before {
+                content:"";
+                display:block;
+                width:1em;
+                height:1em;
+
+                border-radius:50%;
+            }
+        }
+
+        &.-text {
+            span {
+                opacity:0.6;
+            }
+        }
+
+        /* Positions */
+        &.-v1 {
+            left:8%;
+        }
+
+        &.-v2 {
+            left:2%;
+        }
+
+        &.-v3 {
+            left:89%;
+        }
+
+        &.-v4 {
+            left:80%;
+        }
+
+        &.-v5 {
+            left:75%;
+        }
+
+        &.-v6 {
+            left:20%;
+        }
+
+        &.-v7 {
+            left:12%;
+        }
+
+        &.-v8 {
+            left:95%;
+        }
+
+        &.-v9 {
+            left:40%;
+        }
+
+        &.-v10 {
+            left:52%;
+        }
+
+        &.-v11 {
+            left:57%;
+        }
+
+        /* Sizes */
+        &.-s1 {
+            font-size:13px;
+        }
+
+        &.-s2 {
+            font-size:15px;
+        }
+
+        &.-s3 {
+            font-size:18px;
+
+        }
+
+        &.-s4 {
+            font-size:26px;
+        }
+
+        &.-s5 {
+            font-size:40px;
+        }
+
+        &.-s6 {
+            font-size:60px;
+        }
+
+        /* Colors */
+        &.-c1 {
+            &:before {
+                background:#89f6ff;
+            }
+        }
+
+        &.-c2 {
+            &:before {
+                background:#feca00;
+            }
+        }
+
+        &.-c3 {
+            &:before {
+                background:#ff5e00;
+            }
+        }
+
+        &.-c4 {
+            &:before {
+                background:#0248db;
+            }
+        }
+
+        &.-c5 {
+            &:before {
+                background:$color-base;
+            }
+        }
+    }
+}

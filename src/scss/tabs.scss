@@ -1,0 +1,57 @@
+.cb-tabs {
+    $root:&;
+
+    position:relative;
+
+    &.-inverse {
+        color:$color-base;
+    }
+
+    &-navs {
+        position:absolute;
+        left:50%;
+        bottom:50px;
+        z-index:50;
+        transform:translateX(-50%);
+    }
+
+    &-nav {
+        position:relative;
+        display:inline-block;
+        width:16px;
+        height:16px;
+        margin:0 2px;
+
+        cursor:pointer;
+        opacity:0.2;
+        background:currentColor;
+        border-radius:50%;
+
+        transition:opacity 0.15s;
+
+        &:before {
+            content:"";
+            position:absolute;
+            top:-2px;
+            left:-2px;
+            right:-2px;
+            bottom:-2px;
+        }
+
+        &:hover {
+            opacity:0.7;
+        }
+
+        &.-active {
+            opacity:1;
+        }
+    }
+
+    &-content {
+        display:none;
+
+        &.-active {
+            display:block;
+        }
+    }
+}
