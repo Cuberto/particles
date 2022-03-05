@@ -16,6 +16,7 @@ const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
 const webpack = require('webpack-stream');
+const sass = require('gulp-sass')(require('sass'));
 
 /* Primary tasks */
 gulp.task('default', (done) => {
